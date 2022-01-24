@@ -1,0 +1,132 @@
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --green: #4d96a9;
+  --purple: #855fb1;
+  --very-dark-purple: #28283d;
+  --dark-grey: #87879d;
+  --turquoise: #8fe3f9;
+  --pink: #d9b8ff;
+  --white: #fafafa;
+
+  --ff-red-hat-display: "Red Hat Display", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  color: var(--very-dark-purple);
+  font-weight: 900;
+}
+h2 {
+  font-size: 3.2rem;
+  color: var(--very-dark-purple);
+  font-weight: 900;
+}
+h3 {
+  font-size: 1.6rem;
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--dark-grey);
+}
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 6.4rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}
+/* Images */
+img {
+  width: 100%;
+}
+/* Header Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4.8rem 12.8rem 5.4rem;
+}
+/* Hero Container */
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  position: relative;
+  height: 35rem;
+}
+.hero-image_left {
+  position: absolute;
+  width: 19.9rem;
+  height: 15.3rem;
+  left: -5%;
+}
+.hero-image_right {
+  position: absolute;
+  width: 19.9rem;
+  height: 15.3rem;
+  right: -5%;
+}
+.hero-feature {
+  text-align: center;
+  grid-column: -3 / -1;
+  margin: auto;
+}
+.feature__heading {
+  margin: 0 7rem;
+}
+.feature__text {
+  margin: 3.4 3.4rem 3.2rem;
+}
+/* Buttons */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-one {
+  background-color: var(--green);
+  color: var(--white);
+  width: 19.3rem;
+  height: 5.8rem;
+  padding: 1.6rem 4rem;
+  margin-bottom: 3.2rem;
+}
+.btn-two {
+  background-color: var(--purple);
+  color: var(--white);
+  width: 13.9rem;
+  height: 5.8rem;
+  padding: 1.6rem 2.9rem;
+  margin-bottom: 3.2rem;
+}
